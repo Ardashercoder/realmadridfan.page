@@ -1,0 +1,329 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+.background-overlay {
+  background-color: rgba(0, 0, 0, 0.6); /* затемнение для читаемости текста */
+  min-height: 100vh;
+  padding: 20px;
+}
+
+header, main, footer {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #fdd835;
+}
+
+.players-grid, .matches-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.player-card, .match-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+}
+.match-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.match-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1 1 100%;
+  margin-bottom: 10px;
+}
+
+.match-info img {
+  width: 80px;
+  height: auto;
+}
+
+.match-info p {
+  flex: 1;
+  text-align: center;
+  font-size: 18px;
+  margin: 0;
+}
+
+.match-card p:not(.match-info p),
+.match-card a {
+  flex: 1 1 100%;
+  text-align: center;
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.match-card a {
+  color: #00ccff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.match-card a:hover {
+  text-decoration: underline;
+}
+.news {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.news-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s;
+}
+
+.news-card:hover {
+  transform: scale(1.02);
+}
+
+.news-card h3 {
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.news-card p {
+  line-height: 1.6;
+}
+/* Общие стили */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  color: #fffcfc;
+}
+
+/* Стили для игроков */
+.players {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.player-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-squad, .reserve-squad {
+  display: flex;
+  flex-wrap: wrap;
+  width: 48%;
+  margin-bottom: 20px;
+}
+
+.player-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.player-card:hover {
+  transform: scale(1.05);
+}
+
+.player-photo {
+  width: 100%;
+  height: auto;
+}
+
+.player-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.player-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.player-position {
+  font-size: 14px;
+  color: #777;
+}
+
+.player-stats {
+  font-size: 12px;
+  color: #555;
+}
+
+.reserve-squad {
+  margin-left: 20px;
+}
+
+/* Стили для информации о тренерах */
+.player-info h2 {
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+}
+
+footer {
+  background-color: #1e1e1e;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+
+/* Общее оформление для всех страниц */
+body {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+}
+.home-page {
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.players-page {
+  background-image: url('background2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.matches-page {
+  background-image: url('background3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.transfers-page {
+  background-image: url('background4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.transfers-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.transfer-column {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.transfer-column h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.transfer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.transfer-column li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #555;
+}
+body {
+  background-size: cover; /* Заполнить экран, но красиво */
+  background-position: center; /* Центрировать картинку */
+  background-repeat: no-repeat; /* Не повторять */
+}

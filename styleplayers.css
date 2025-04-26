@@ -1,0 +1,42 @@
+.player-card {
+  display: flex;
+  justify-content: flex-start; /* Для выравнивания слева */
+  align-items: center;
+  background-color: #fff; /* Белый фон */
+  padding: 20px; /* Отступы вокруг контента */
+  border-radius: 10px; /* Скругленные углы */
+  margin: 20px 0; /* Отступы сверху и снизу */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень для квадратиков */
+}
+
+.player-photo {
+  width: 200px; /* Увеличиваем размер фото */
+  height: 250px;
+  object-fit: cover;
+  margin-right: 30px; /* Отступ справа от фото */
+  border-radius: 8px; /* Скругляем углы изображения */
+}
+
+.player-info {
+  font-size: 18px;
+  max-width: 400px; /* Ограничиваем ширину текста */
+  color: #fff; /* Белый цвет для информации */
+}
+
+.player-name {
+  font-size: 28px; /* Увеличиваем размер имени */
+  font-weight: bold;
+  color: #fff; /* Белый цвет для имени */
+  margin-bottom: 10px; /* Отступ снизу */
+}
+
+.player-position {
+  font-size: 20px;
+  color: #fff; /* Белый цвет для позиции */
+  margin-bottom: 10px;
+}
+
+.player-stats {
+  font-size: 18px;
+  color: #fff; /* Белый цвет для статистики */
+}
